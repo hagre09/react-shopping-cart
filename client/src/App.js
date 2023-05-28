@@ -1,14 +1,15 @@
 import Footer from "./components/Footer/footer.js";
 import Header from "./components/Header/header.js";
 
+import { words } from "./words.js";
 function App() {
   return (
     <div className="layout">
-      <Header/>
+      <Header />
       <main>
-        content
+        {words.content}
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
