@@ -18,3 +18,19 @@
   "footer";
   grid-template-rows: 50px 1fr 50px;
 }
+
+
+
+.wrapper {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .products-wrapper{
+  width: 68%;
+}
+
+.wrapper .filter-wrapper{
+  width: 30%;
+}

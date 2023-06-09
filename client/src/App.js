@@ -1,5 +1,6 @@
 import Footer from "./components/Footer/footer.js";
 import Header from "./components/Header/header.js";
+import Products from "./components/Products/Products.js";
 
 import { words } from "./words.js";
 function App() {
@@ -7,7 +8,10 @@ function App() {
     <div className="layout">
       <Header />
       <main>
-        {words.content}
+        <div className="wrapper">
+          <Products/>
+          <div className="filter-wrapper">Filter</div>
+        </div>
       </main>
       <Footer />
     </div>
