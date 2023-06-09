@@ -1,6 +1,5 @@
 import React from "react";
-import "./footer.css"
-
+import '../../css/Footer/footer.css'
 import { words } from "../../words";
 function Footer() {
     return <>

@@ -1,5 +1,5 @@
 import React from "react";
-import './header.css';
+import '../../css/Header/header.css';
 
 import { words } from "../../words";
 function Header() {
