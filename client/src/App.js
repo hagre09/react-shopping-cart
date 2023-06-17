@@ -1,3 +1,4 @@
+import Filter from "./components/Filter/Filter.js";
 import Footer from "./components/Footer/footer.js";
 import Header from "./components/Header/header.js";
 import Products from "./components/Products/Products.js";
@@ -10,7 +11,7 @@ function App() {
       <main>
         <div className="wrapper">
           <Products/>
-          <div className="filter-wrapper">Filter</div>
+          <Filter/>
         </div>
       </main>
       <Footer />
