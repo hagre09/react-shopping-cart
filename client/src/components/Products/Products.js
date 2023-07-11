@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import data from '../../data.json';
 import '../../css/Products/Products.css';
 import ProductModel from './ProductModal/ProductModal';
 
-function Products() {
-    const [products, setProducts] = useState(data);
+function Products(props) {
     const [product, setProduct] = useState("");
 
     const openModel = (product) => {
@@ -16,7 +14,7 @@ function Products() {
     }
 
     return <>
-        <div className="products-wrapper"> {products.map(product => (
+        <div className="products-wrapper"> {props.products.map(product => (
             <div className='product-item' key={product.id}>
                 <a href='#' onClick={() => { openModel(product) }}>
                     <img src={product.imageUrl} alt={product.title} />
